@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Project from "./components/Project";
 import Nav from "./components/Navigation";
+import Contact from "./components/Contact";
 import twitcherImage from "./assets/images/twitcher.png";
 import weatherDashboardImage from "./assets/images/weather-dashboard.png";
 
@@ -14,12 +15,12 @@ function App() {
 
   const renderPage = () => {
     switch (currentPage) {
-      case "About":
-        return <About />;
-      default:
+      case "Contact":
+        return <Contact />;
+      case "Portfolio":
         return <Project projects={projects} />;
-      // default:
-      //   return <Contact />;
+      default:
+        return <About />;
     }
   };
 
