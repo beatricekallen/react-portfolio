@@ -30,11 +30,14 @@ code {
 }
 
 .nav-items {
-  text-align: right !important;
+  text-align: right;
+  margin-right: 20px !important;
+  font-size: 24px;
 }
 
 .about-container {
   margin: 20px;
+  height: 80vh;
 }
 
 .about-img {
@@ -62,6 +65,8 @@ code {
 .resume-container {
   width: 50%;
   justify-content: center;
+  margin: auto;
+  height: 80vh;
 }
 
 .resume-contents {
@@ -75,4 +80,24 @@ code {
 .form {
   width: 70%;
   margin: auto;
+  height: 80vh;
+}
+
+.footer {
+  height: 30px;
+}
+
+ul {
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+  margin-left: 10px;
+}
+
+ul li:first-child {
+  margin-left: 0;
 }

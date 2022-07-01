@@ -9,7 +9,7 @@ const Navigation = (props) => {
       <Navbar.Brand href="#home" className="name">
         BEATRICE ALLEN
       </Navbar.Brand>
-      <Nav className="me-auto nav-items">
+      <Nav className="nav-items">
         {tabs.map((tab) => (
           <Nav.Link
             className="nav-item"
