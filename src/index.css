@@ -50,6 +50,10 @@ code {
   margin: 10px;
 }
 
+.card-image {
+  width: 80%;
+}
+
 .button {
   margin: 5px 0px;
 }
