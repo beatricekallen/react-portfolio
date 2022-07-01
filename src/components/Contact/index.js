@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} className="form">
       <Form.Group className="mb-3">
         <Form.Label>Your name</Form.Label>
         <Form.Control
