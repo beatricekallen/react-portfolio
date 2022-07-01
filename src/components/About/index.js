@@ -6,7 +6,7 @@ import bioPhoto from "../../assets/images/about-me-photo.png";
 
 const About = () => {
   return (
-    <Container>
+    <Container className="about-container">
       <Row>
         <Col>
           <h2>Hi there!</h2>
@@ -30,7 +30,7 @@ const About = () => {
         </Col>
 
         <Col>
-          <img src={bioPhoto} alt="Beatrice Allen" />
+          <img src={bioPhoto} alt="Beatrice Allen" className="about-img" />
         </Col>
       </Row>
     </Container>

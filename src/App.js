@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Project from "./components/Project";
 import Nav from "./components/Navigation";
 import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 import twitcherImage from "./assets/images/twitcher.png";
 import weatherDashboardImage from "./assets/images/weather-dashboard.png";
 
@@ -19,6 +20,8 @@ function App() {
         return <Contact />;
       case "Portfolio":
         return <Project projects={projects} />;
+      case "Resume":
+        return <Resume />;
       default:
         return <About />;
     }

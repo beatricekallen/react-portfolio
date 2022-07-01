@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Serif:opsz@8..144&family=Staatliches&family=Train+One&display=swap");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,6 +12,33 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.name {
+  font-family: "Train One", cursive;
+  font-size: 48px !important;
+  margin: 20px;
+}
+
+.navbar {
+  justify-content: space-between !important;
+}
+
+.nav .navbar {
+  height: 15vh;
+}
+
+.nav-items {
+  text-align: right !important;
+}
+
+.about-container {
+  margin: 20px;
+}
+
+.about-img {
+  border-radius: 50%;
+  margin: 0px 50px;
 }
 
 .card {
@@ -25,10 +54,15 @@ code {
   margin: 5px 0px;
 }
 
-.link {
-  color: black;
+.resume-container {
+  width: 50%;
+  justify-content: center;
 }
 
-.link-active {
-  color: brown;
+.resume-contents {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between !important;
 }

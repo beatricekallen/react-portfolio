@@ -5,9 +5,11 @@ const Navigation = (props) => {
   const tabs = ["About", "Portfolio", "Contact", "Resume"];
 
   return (
-    <Navbar bg="light" variant="light" sticky="top">
-      <Navbar.Brand href="#home">BEATRICE ALLEN</Navbar.Brand>
-      <Nav className="me-auto">
+    <Navbar bg="light" variant="light" sticky="top" className="navbar">
+      <Navbar.Brand href="#home" className="name">
+        BEATRICE ALLEN
+      </Navbar.Brand>
+      <Nav className="me-auto nav-items">
         {tabs.map((tab) => (
           <Nav.Link
             className="nav-item"
