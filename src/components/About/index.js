@@ -8,7 +8,7 @@ const About = () => {
   return (
     <Container className="about-container">
       <Row>
-        <Col>
+        <Col s={6}>
           <h2>Hi there!</h2>
           <p>
             In my previous life, before I discovered coding, I worked in
@@ -29,7 +29,7 @@ const About = () => {
           </p>
         </Col>
 
-        <Col>
+        <Col s={6}>
           <img src={bioPhoto} alt="Beatrice Allen" className="about-img" />
         </Col>
       </Row>

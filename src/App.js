@@ -96,8 +96,8 @@ function App() {
 
       <main>
         <div>{renderPage()}</div>
+        <Footer></Footer>
       </main>
-      <Footer></Footer>
     </div>
   );
 }

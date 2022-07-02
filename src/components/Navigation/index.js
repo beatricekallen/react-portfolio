@@ -1,7 +1,7 @@
 import Nav from "react-bootstrap/Nav";
 
 const Navigation = (props) => {
-  const tabs = ["About", "Portfolio", "Contact", "Resume"];
+  const tabs = ["About Me", "Portfolio", "Contact", "Resume"];
 
   return (
     <Nav className="nav-items">
