@@ -5,7 +5,6 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Project from "./components/Project";
-import Nav from "./components/Navigation";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import twitcherImage from "./assets/images/twitcher.png";
@@ -30,11 +29,6 @@ function App() {
         return <About />;
     }
   };
-
-  // An image of the deployed application (either a GIF or a screenshot)
-  // The title of the project
-  // A link to the deployed application
-  // A link to the corresponding GitHub repository
 
   const projects = [
     {
@@ -95,8 +89,11 @@ function App() {
 
   return (
     <div>
-      <Header></Header>
-      <Nav currentPage={currentPage} handlePageChange={handlePageChange}></Nav>
+      <Header
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+      ></Header>
+
       <main>
         <div>{renderPage()}</div>
       </main>

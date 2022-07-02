@@ -1,16 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost&family=Train+One&display=swap");
 
+/* universal styles */
 :root {
   --purple-color: #2e0219;
 }
 
 body {
+  position: relative;
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", */
   font-family: "Jost", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  padding-bottom: 20px;
+  min-height: 100vh;
 }
 
 p {
@@ -22,6 +29,17 @@ code {
     monospace;
 }
 
+.button {
+  background-color: var(--purple-color) !important;
+  outline: var(--purple-color) !important;
+  margin: 5px 0px;
+}
+
+.button:hover {
+  background-color: #70566d !important;
+}
+
+/* navbar styles */
 .name {
   font-family: "Train One", cursive;
   font-size: 48px !important;
@@ -42,10 +60,7 @@ code {
   font-size: 24px;
 }
 
-.underlined {
-  text-decoration: underline;
-}
-
+/* about section styles */
 .about-container {
   margin: 20px;
   height: 80vh;
@@ -53,9 +68,10 @@ code {
 
 .about-img {
   border-radius: 50%;
-  margin: 0px 50px;
+  margin-left: 70px;
 }
 
+/* project section styles */
 .card {
   margin: 20px;
   width: 25rem;
@@ -66,10 +82,7 @@ code {
   width: 80%;
 }
 
-.button {
-  margin: 5px 0px;
-}
-
+/* resume section styles */
 .resume-container {
   width: 50%;
   justify-content: center;
@@ -85,22 +98,25 @@ code {
   justify-content: space-between !important;
 }
 
+/* contact section styles */
 .form-container {
   width: 70%;
   margin: auto;
   height: 80vh;
 }
 
+/* footer styles */
 .footer {
-  height: 10vh;
+  height: auto;
   background-color: var(--purple-color);
   opacity: 80%;
   color: white;
   font-size: larger;
   padding: 20px 0px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
+  margin-top: 20px;
 }
 
 ul {
@@ -126,13 +142,4 @@ ul li:first-child {
 
 .footer-a:hover {
   text-decoration: underline !important;
-}
-
-.button {
-  background-color: var(--purple-color) !important;
-  outline: var(--purple-color) !important;
-}
-
-.button:hover {
-  background-color: #70566d !important;
 }

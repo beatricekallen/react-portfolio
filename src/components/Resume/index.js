@@ -1,9 +1,17 @@
+import resume from "../../assets/documents/resume.pdf";
+
 const Resume = () => {
   return (
     <div className="resume-container">
       <div className="resume-contents">
         <h2>Resume</h2>
-        <p>My resume is available for download here.</p>
+        <p>
+          My resume is available for download{" "}
+          <a href={resume} download>
+            here
+          </a>
+          .
+        </p>
         <h2>Languages</h2>
         <p>HTML, CSS, JavaScript, jQuery</p>
         <h2>Applications</h2>
