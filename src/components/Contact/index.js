@@ -41,48 +41,51 @@ const Contact = () => {
   };
 
   return (
-    <Form onSubmit={handleSubmit} className="form">
-      <Form.Group className="mb-3">
-        <Form.Label>Your name</Form.Label>
-        <Form.Control
-          type="name"
-          placeholder="Enter name"
-          name="A name"
-          defaultValue={name}
-          onBlur={handleChange}
-        />
-      </Form.Group>
+    <div className="form-container">
+      <h2>Get in touch!</h2>
+      <Form onSubmit={handleSubmit} className="form">
+        <Form.Group className="mb-3">
+          <Form.Label>Your name</Form.Label>
+          <Form.Control
+            type="name"
+            placeholder="Enter name"
+            name="A name"
+            defaultValue={name}
+            onBlur={handleChange}
+          />
+        </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control
-          type="email"
-          placeholder="Enter email"
-          name="email"
-          defaultValue={email}
-          onBlur={handleChange}
-        />
-      </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="Enter email"
+            name="email"
+            defaultValue={email}
+            onBlur={handleChange}
+          />
+        </Form.Group>
 
-      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Leave a message!</Form.Label>
-        <Form.Control
-          as="textarea"
-          rows={3}
-          name="A message"
-          defaultValue={message}
-          onBlur={handleChange}
-        />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
-    </Form>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Label>Leave a message!</Form.Label>
+          <Form.Control
+            as="textarea"
+            rows={3}
+            name="A message"
+            defaultValue={message}
+            onBlur={handleChange}
+          />
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+      </Form>
+    </div>
   );
 };
 

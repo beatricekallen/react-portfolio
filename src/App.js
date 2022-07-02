@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import twitcherImage from "./assets/images/twitcher.png";
 import weatherDashboardImage from "./assets/images/weather-dashboard.png";
+import beersAndCheersImage from "./assets/images/beers-and-cheers.png";
 
 function App() {
   const [currentPage, handlePageChange] = useState("About");
@@ -45,7 +46,7 @@ function App() {
     {
       id: 2,
       title: "Beers and Cheers",
-      image: "./assets/images/twitcher.png",
+      image: beersAndCheersImage,
       description:
         "Need an app to help you plan the perfect night out? Gotcha covered.",
       deployed: "https://beatricekallen.github.io/beers-and-cheers/",

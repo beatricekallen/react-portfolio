@@ -1,11 +1,19 @@
 const Footer = () => {
   return (
-    <div className="footer">
-      <ul>
-        <li href="#github">GitHub</li>
-        <li href="#linkedin">LinkedIn</li>
-        <li href="#twitter">Twitter</li>
-      </ul>
+    <div>
+      <div className="footer">
+        <ul>
+          <li href="#github" target="_blank">
+            GitHub
+          </li>
+          <li href="#linkedin" target="_blank">
+            LinkedIn
+          </li>
+          <li href="#twitter" target="_blank">
+            Twitter
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
