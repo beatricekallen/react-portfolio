@@ -7,7 +7,6 @@ const Navigation = (props) => {
     <Nav className="nav-items">
       {tabs.map((tab) => (
         <Nav.Link
-          activeClassName="underlined"
           className="nav-item"
           key={tab}
           href={"#" + tab.toLowerCase()}

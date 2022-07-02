@@ -21,6 +21,7 @@ const Contact = () => {
       setFormState({ [e.target.name]: e.target.value });
       console.log("Form", formState);
     }
+    setFormState({ ...formState, [e.target.name]: "" });
   };
 
   const handleChange = (e) => {
@@ -38,12 +39,15 @@ const Contact = () => {
         setErrorMessage("");
       }
     }
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
   };
 
   return (
     <div className="form-container">
       <h2>Get in touch!</h2>
-      <Form onSubmit={handleSubmit} className="form">
+      <Form className="form" onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label>Your name</Form.Label>
           <Form.Control
@@ -76,14 +80,14 @@ const Contact = () => {
             onBlur={handleChange}
           />
         </Form.Group>
-        <Button type="submit" className="button">
-          Submit
-        </Button>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
+        <Button type="submit" className="button">
+          Submit
+        </Button>
       </Form>
     </div>
   );
