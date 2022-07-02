@@ -76,7 +76,7 @@ const Contact = () => {
             onBlur={handleChange}
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button type="submit" className="button">
           Submit
         </Button>
         {errorMessage && (

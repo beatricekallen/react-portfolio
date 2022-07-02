@@ -5,8 +5,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const Project = ({ projects }) => {
-  // style={{ width: "18rem" }}
-
   return (
     <Container fluid>
       <Row xs={1} s={1} md="auto" className="g-4">

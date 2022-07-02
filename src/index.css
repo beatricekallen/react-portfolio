@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Serif:opsz@8..144&family=Staatliches&family=Train+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Train+One&display=swap");
 
 :root {
   --purple-color: #2e0219;
@@ -6,11 +6,15 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", */
+  font-family: "Jost", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: larger;
 }
 
 code {
@@ -55,7 +59,7 @@ code {
 .card {
   margin: 20px;
   width: 25rem;
-  height: 30rem;
+  height: 35rem;
 }
 
 .card-image {
@@ -113,6 +117,15 @@ ul li {
 
 ul li:first-child {
   margin-left: 0;
+}
+
+.footer-a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.footer-a:hover {
+  text-decoration: underline !important;
 }
 
 .button {
