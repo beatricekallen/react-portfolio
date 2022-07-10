@@ -8,7 +8,7 @@ const About = () => {
   return (
     <Container className="about-container">
       <Row>
-        <Col s={6}>
+        <Col s={12} m={6} l={6}>
           <h2>Hi there!</h2>
           <p>
             In my previous life, before I discovered coding, I worked in
