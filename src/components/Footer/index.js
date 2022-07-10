@@ -10,7 +10,7 @@ const Footer = () => {
           <a
             href="https://github.com/beatricekallen"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="footer-a"
           >
             View all of my projects on GitHub
@@ -20,20 +20,10 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/in/beatrice-k-allen/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="footer-a"
           >
             Connect with me on LinkedIn
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/beatricekallen"
-            target="_blank"
-            rel="noreferrer"
-            className="footer-a"
-          >
-            Follow me on Twitter
           </a>
         </li>
       </ul>
