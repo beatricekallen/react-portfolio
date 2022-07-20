@@ -93,7 +93,7 @@ const Contact = () => {
     <div className="form-container">
       <h2>Get in touch!</h2>
       <p>
-        I would love to connect with you! My email address is{" "}
+        I would love to connect with you! My email address is
         <a href="mailto:bkallen90@gmail.com">bkallen90@gmail.com</a>. Please
         feel free to reach out!
       </p>

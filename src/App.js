@@ -11,8 +11,8 @@ import twitcherImage from "./assets/images/twitcher.png";
 import weatherDashboardImage from "./assets/images/weather-dashboard.png";
 import beersAndCheersImage from "./assets/images/beers-and-cheers.png";
 import techBlogImage from "./assets/images/tech-blog.png";
-import passwordGeneratorImage from "./assets/images/password-generator.png";
 import workdaySchedulerImage from "./assets/images/scheduler.png";
+import roamImage from "./assets/images/roam-img.png";
 
 function App() {
   const [currentPage, handlePageChange] = useState("About");
@@ -31,6 +31,15 @@ function App() {
   };
 
   const projects = [
+    {
+      id: 5,
+      title: "Roam",
+      image: roamImage,
+      description:
+        "An application that allows users to plan trips with friends, including splitting expenses and offsetting carbon emissions. Built with JavaScript, HTML, CSS, Material UI, MongoDB, Mongoose, Express, React, Node.js, GraphQL, Apollo, and Stripe.",
+      deployed: "https://pacific-depths-60618.herokuapp.com/",
+      github: "https://github.com/beatricekallen/roam",
+    },
     {
       id: 1,
       title: "Twitcher",
@@ -66,15 +75,6 @@ function App() {
         "An application that allows users to view and post blogs. The app also includes comment, edit, and delete functionalities. Built with Node.js, Express, and Sequelize. Follows the MVC paradigm.",
       deployed: "https://tech-blog-bka.herokuapp.com/",
       github: "https://github.com/beatricekallen/tech-blog",
-    },
-    {
-      id: 5,
-      title: "Password Generator",
-      image: passwordGeneratorImage,
-      description:
-        "An application that generates a random password based on user input about how long they'd like the password to be and what characters they'd like to include. Built with JavaScript, HTML, and CSS.",
-      deployed: "https://beatricekallen.github.io/password-generator/",
-      github: "https://github.com/beatricekallen/password-generator",
     },
     {
       id: 6,
